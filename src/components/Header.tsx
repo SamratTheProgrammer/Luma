@@ -26,7 +26,13 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="h-14 px-4 flex items-center justify-between">
         {/* Brand */}
         <div className="flex items-center gap-2">
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-2">
+            <img 
+              id="img-header-luma-logo"
+              src={LUMA_ASSETS.logo} 
+              alt="Luma" 
+              className="h-6 w-auto object-contain drop-shadow" 
+            />
             <span className="text-[#ff5e62] font-bold text-[22px] tracking-tight font-syne">
               Luma
             </span>

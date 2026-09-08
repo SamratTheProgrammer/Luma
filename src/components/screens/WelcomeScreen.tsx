@@ -32,19 +32,21 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onCreateProfile, o
       <div className="absolute bottom-40 -left-20 w-64 h-64 bg-[#d67f5b]/15 rounded-full blur-3xl pointer-events-none -z-10" />
 
       {/* Brand Mark Header */}
-      <div className="flex flex-col items-center justify-center pt-2 pb-2">
-        <div className="relative group cursor-pointer">
-          <div className="absolute -inset-2 bg-gradient-to-r from-[#ff5e62] via-[#d4bbff] to-[#ffb599] rounded-full blur-xl opacity-60 group-hover:opacity-90 transition duration-700" />
-          <div className="relative w-16 h-16 rounded-full bg-[#393241]/60 backdrop-blur-xl p-2.5 flex items-center justify-center shadow-xl border border-white/10">
-            <img 
-              src={LUMA_ASSETS.logo} 
-              alt="Luma Symbol" 
-              className="w-full h-full object-contain filter drop-shadow" 
-            />
-          </div>
+      <div className="flex flex-col items-center justify-center pt-4 pb-2">
+        <div className="relative group flex items-center justify-center">
+          {/* Subtle atmospheric glow behind the logo */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#ff5e62]/30 via-[#d4bbff]/20 to-[#ffb599]/30 blur-2xl opacity-70 group-hover:opacity-100 transition duration-700 pointer-events-none" />
+          
+          {/* Big Luma Logo without circle */}
+          <img 
+            id="img-luma-welcome-logo"
+            src={LUMA_ASSETS.logo} 
+            alt="Luma Logo" 
+            className="relative h-24 sm:h-28 w-auto max-w-[260px] object-contain drop-shadow-[0_10px_30px_rgba(255,94,98,0.35)] transition-transform duration-300 group-hover:scale-105 cursor-pointer" 
+          />
         </div>
 
-        <div className="flex items-center gap-1.5 mt-3 px-3.5 py-1 rounded-full bg-[#2e2736]/60 backdrop-blur-md border border-white/5">
+        <div className="flex items-center gap-1.5 mt-3.5 px-3.5 py-1 rounded-full bg-[#2e2736]/60 backdrop-blur-md border border-white/5">
           <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ff5e62] animate-ping" />
           <span className="text-[11px] font-bold text-[#ffb599] tracking-widest uppercase">Late-Night Intimacy</span>
         </div>
