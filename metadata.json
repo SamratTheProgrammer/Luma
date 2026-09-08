@@ -1,0 +1,6 @@
+{
+  "name": "Luma Dating",
+  "description": "An intentional dating app designed for deep compatibility, Match DNA calibration, and genuine spark connections.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
